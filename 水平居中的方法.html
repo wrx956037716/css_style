@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+        .one span {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+        .three{
+            position: relative;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        .three div{
+            position: absolute;
+            left:0;
+            right:0;
+            margin:auto;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+
+        }
+        .four{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+        .four div {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <span>元素为行内元素，设置父元素 text-align:center</span>
+    </div>
+    <div class="two">
+        <div>如果元素宽度固定，可以设置左右 margin 为 auto</div>
+    </div>
+    <div class="three">
+        <div>如果元素为绝对定位，设置父元素 position 为 relative ，元素设
+            left:0;right:0;margin:auto;</div>
+    </div>
+    <div class="four">
+        <div>元素为块元素，设置父元素 text-align:center，会发生什么：会无法水平居中</div>
+    </div>
+</body>
+</html>

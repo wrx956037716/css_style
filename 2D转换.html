@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="news">
+      center
+    <div class="right">
+       <img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20210518/89981544783420.jpg" alt="">
+      </div >
+      <!-- <div class="left">left</div> -->
+  </div>
+ 
+  
+  
+  <style>
+    .news {
+      height: 400px;
+      width: 400px;
+      background-color: gray;
+      border: solid 1px black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -200px;
+      margin-left: -200px;
+      
+  }
+  .right{
+    
+    width: 291px;
+    height: 134px;
+    border: solid blue;
+  }
+ 
+  /* 放大*/
+  /* img:hover{
+ 
+     transform:scale(1.1);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+
+    
+    
+  } */
+
+/* 移动 */
+  /* img:hover{
+    transform:translate(0px,-8px)
+    
+  } */
+ 
+ /* 旋转 */
+ img{
+   /* 过渡写到本身上，谁做动画加个谁 */
+   transition: all 0.3s;
+   /* 设置旋转中心 */
+   /* transform-origin: left bottom; */
+   transform-origin: 20px 20px;
+  
+ }
+ img:hover{
+   transform: rotate(360deg);
+ }
+      
+
+  </style>
+</body>
+</html>
